@@ -30,3 +30,8 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  height: 40vh;
+  width: 40vw;
+}

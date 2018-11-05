@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import './include/bootstrap';
+
+import Button from './Button';
+import Link from './Link';
+
+import HookedButton from './HookedButton';
+import HookedLink from './HookedLink';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Button caption="I am button" title="This is button tooltip" />
+        <Link href="https://shuttlerock.com" caption="I am link" title="This is link tooltip" />
+        <HookedButton caption="I am button" title="This is button tooltip" />
+        <HookedLink href="https://reactjs.org" caption="I am link" title="This is link tooltip" />
       </div>
     );
   }
